@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>CiPHER HUNT</string>
+	<string>cipherHunt</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -13,7 +13,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>Cipherhunt</string>
+	<string>cipherHunt</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleLocalizations</key>
@@ -33,7 +33,7 @@
             <string>Editor</string>
             <key>CFBundleURLSchemes</key>
             <array>
-                <string>com.googleusercontent.apps.745477093012-au74a3gcpr50275uvluptr7n1bmvpnor</string>
+                <string>com.googleusercontent.apps.745477093012-8m9ugstuh631ikhg8sr3nh97ckr80q92</string>
                 
             </array>
         </dict>
@@ -42,10 +42,10 @@
         <key>CFBundleTypeRole</key>
         <string>Editor</string>
         <key>CFBundleURLName</key>
-        <string>cipherhunt</string>
+        <string>cipher_hunt</string>
         <key>CFBundleURLSchemes</key>
         <array>
-        <string>io.flutterflow.cipherhunt</string>
+        <string>com.liyy.cipherhunt</string>
         </array>
         </dict>
     </array>
@@ -61,11 +61,6 @@
 
 	<key>PermissionGroupNotification</key>
     <string>to gave you the notifications</string>
-    <key>UIBackgroundModes</key>
-    <array>
-        <string>fetch</string>
-        <string>remote-notification</string>
-    </array>
 
 
 

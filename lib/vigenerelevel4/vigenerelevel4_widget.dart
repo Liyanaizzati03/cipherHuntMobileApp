@@ -45,8 +45,6 @@ class _Vigenerelevel4WidgetState extends State<Vigenerelevel4Widget>
     super.initState();
     _model = createModel(context, () => Vigenerelevel4Model());
 
-    logFirebaseEvent('screen_view',
-        parameters: {'screen_name': 'vigenerelevel4'});
     animationsMap.addAll({
       'textOnPageLoadAnimation1': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
@@ -121,8 +119,6 @@ class _Vigenerelevel4WidgetState extends State<Vigenerelevel4Widget>
               size: 30.0,
             ),
             onPressed: () async {
-              logFirebaseEvent('VIGENERELEVEL4_arrow_back_rounded_ICN_ON');
-              logFirebaseEvent('IconButton_navigate_back');
               context.pop();
             },
           ),
@@ -225,9 +221,6 @@ class _Vigenerelevel4WidgetState extends State<Vigenerelevel4Widget>
                                       hoverColor: Colors.transparent,
                                       highlightColor: Colors.transparent,
                                       onTap: () async {
-                                        logFirebaseEvent(
-                                            'VIGENERELEVEL4_Image_ah767zjr_ON_TAP');
-                                        logFirebaseEvent('Image_expand_image');
                                         await Navigator.push(
                                           context,
                                           PageTransition(
@@ -400,9 +393,6 @@ class _Vigenerelevel4WidgetState extends State<Vigenerelevel4Widget>
                               padding: EdgeInsets.all(4.0),
                               child: FFButtonWidget(
                                 onPressed: () async {
-                                  logFirebaseEvent(
-                                      'VIGENERELEVEL4_PAGE_Answerbutton_ON_TAP');
-                                  logFirebaseEvent('Answerbutton_alert_dialog');
                                   await showDialog(
                                     context: context,
                                     builder: (alertDialogContext) {
@@ -461,10 +451,6 @@ class _Vigenerelevel4WidgetState extends State<Vigenerelevel4Widget>
                               padding: EdgeInsets.all(4.0),
                               child: FFButtonWidget(
                                 onPressed: () async {
-                                  logFirebaseEvent(
-                                      'VIGENERELEVEL4_PAGE_AnswerButton_ON_TAP');
-                                  logFirebaseEvent('AnswerButton_navigate_to');
-
                                   context.pushNamed(
                                     ConfettiWinnerPageV4Widget.routeName,
                                     queryParameters: {
@@ -523,9 +509,6 @@ class _Vigenerelevel4WidgetState extends State<Vigenerelevel4Widget>
                               padding: EdgeInsets.all(6.0),
                               child: FFButtonWidget(
                                 onPressed: () async {
-                                  logFirebaseEvent(
-                                      'VIGENERELEVEL4_PAGE_AnswerButton_ON_TAP');
-                                  logFirebaseEvent('AnswerButton_alert_dialog');
                                   await showDialog(
                                     context: context,
                                     builder: (alertDialogContext) {
@@ -584,9 +567,6 @@ class _Vigenerelevel4WidgetState extends State<Vigenerelevel4Widget>
                               padding: EdgeInsets.all(6.0),
                               child: FFButtonWidget(
                                 onPressed: () async {
-                                  logFirebaseEvent(
-                                      'VIGENERELEVEL4_PAGE_AnswerButton_ON_TAP');
-                                  logFirebaseEvent('AnswerButton_alert_dialog');
                                   await showDialog(
                                     context: context,
                                     builder: (alertDialogContext) {
@@ -653,9 +633,6 @@ class _Vigenerelevel4WidgetState extends State<Vigenerelevel4Widget>
                         hoverColor: Colors.transparent,
                         highlightColor: Colors.transparent,
                         onTap: () async {
-                          logFirebaseEvent(
-                              'VIGENERELEVEL4_PAGE_Icon_x29km4cy_ON_TAP');
-                          logFirebaseEvent('Icon_alert_dialog');
                           await showDialog(
                             context: context,
                             builder: (alertDialogContext) {

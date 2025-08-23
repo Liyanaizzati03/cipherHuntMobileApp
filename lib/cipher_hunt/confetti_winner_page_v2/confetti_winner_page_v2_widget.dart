@@ -39,8 +39,6 @@ class _ConfettiWinnerPageV2WidgetState extends State<ConfettiWinnerPageV2Widget>
     super.initState();
     _model = createModel(context, () => ConfettiWinnerPageV2Model());
 
-    logFirebaseEvent('screen_view',
-        parameters: {'screen_name': 'ConfettiWinnerPageV2'});
     animationsMap.addAll({
       'textOnPageLoadAnimation1': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
@@ -326,10 +324,6 @@ You ... */
                     children: [
                       FFButtonWidget(
                         onPressed: () async {
-                          logFirebaseEvent(
-                              'CONFETTI_WINNER_V2_REPLAY_LEVEL_BTN_ON_T');
-                          logFirebaseEvent('Button_navigate_to');
-
                           context.pushNamed(
                             Vigenerelevel2Widget.routeName,
                             queryParameters: {
@@ -389,10 +383,6 @@ You ... */
                       ),
                       FFButtonWidget(
                         onPressed: () async {
-                          logFirebaseEvent(
-                              'CONFETTI_WINNER_V2_MAIN_MENU_BTN_ON_TAP');
-                          logFirebaseEvent('Button_navigate_to');
-
                           context.pushNamed(MainMenuWidget.routeName);
                         },
                         text: FFLocalizations.of(context).getText(
@@ -430,10 +420,6 @@ You ... */
                       ),
                       FFButtonWidget(
                         onPressed: () async {
-                          logFirebaseEvent(
-                              'CONFETTI_WINNER_V2_NEXT_LEVEL_BTN_ON_TAP');
-                          logFirebaseEvent('Button_navigate_to');
-
                           context.pushNamed(
                             Vigenerelevel3Widget.routeName,
                             queryParameters: {

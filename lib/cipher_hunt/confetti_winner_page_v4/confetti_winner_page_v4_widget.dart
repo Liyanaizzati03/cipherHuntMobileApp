@@ -39,8 +39,6 @@ class _ConfettiWinnerPageV4WidgetState extends State<ConfettiWinnerPageV4Widget>
     super.initState();
     _model = createModel(context, () => ConfettiWinnerPageV4Model());
 
-    logFirebaseEvent('screen_view',
-        parameters: {'screen_name': 'ConfettiWinnerPageV4'});
     animationsMap.addAll({
       'textOnPageLoadAnimation1': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
@@ -326,10 +324,6 @@ class _ConfettiWinnerPageV4WidgetState extends State<ConfettiWinnerPageV4Widget>
                     children: [
                       FFButtonWidget(
                         onPressed: () async {
-                          logFirebaseEvent(
-                              'CONFETTI_WINNER_V4_REPLAY_LEVEL_BTN_ON_T');
-                          logFirebaseEvent('Button_navigate_to');
-
                           context.pushNamed(
                             Vigenerelevel4Widget.routeName,
                             queryParameters: {
@@ -389,10 +383,6 @@ class _ConfettiWinnerPageV4WidgetState extends State<ConfettiWinnerPageV4Widget>
                       ),
                       FFButtonWidget(
                         onPressed: () async {
-                          logFirebaseEvent(
-                              'CONFETTI_WINNER_V4_MAIN_MENU_BTN_ON_TAP');
-                          logFirebaseEvent('Button_navigate_to');
-
                           context.pushNamed(MainMenuWidget.routeName);
                         },
                         text: FFLocalizations.of(context).getText(
@@ -430,10 +420,6 @@ class _ConfettiWinnerPageV4WidgetState extends State<ConfettiWinnerPageV4Widget>
                       ),
                       FFButtonWidget(
                         onPressed: () async {
-                          logFirebaseEvent(
-                              'CONFETTI_WINNER_V4_NEXT_LEVEL_BTN_ON_TAP');
-                          logFirebaseEvent('Button_navigate_to');
-
                           context.pushNamed(
                             Vigenerelevel5Widget.routeName,
                             queryParameters: {

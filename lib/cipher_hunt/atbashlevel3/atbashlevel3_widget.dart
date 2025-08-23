@@ -43,8 +43,6 @@ class _Atbashlevel3WidgetState extends State<Atbashlevel3Widget>
     super.initState();
     _model = createModel(context, () => Atbashlevel3Model());
 
-    logFirebaseEvent('screen_view',
-        parameters: {'screen_name': 'atbashlevel3'});
     animationsMap.addAll({
       'textOnPageLoadAnimation1': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
@@ -131,8 +129,6 @@ class _Atbashlevel3WidgetState extends State<Atbashlevel3Widget>
               size: 30.0,
             ),
             onPressed: () async {
-              logFirebaseEvent('ATBASHLEVEL3_arrow_back_rounded_ICN_ON_T');
-              logFirebaseEvent('IconButton_navigate_back');
               context.pop();
             },
           ),
@@ -263,9 +259,6 @@ class _Atbashlevel3WidgetState extends State<Atbashlevel3Widget>
                                     hoverColor: Colors.transparent,
                                     highlightColor: Colors.transparent,
                                     onTap: () async {
-                                      logFirebaseEvent(
-                                          'ATBASHLEVEL3_PAGE_Image_lwm5z8kq_ON_TAP');
-                                      logFirebaseEvent('Image_expand_image');
                                       await Navigator.push(
                                         context,
                                         PageTransition(
@@ -400,10 +393,6 @@ MEE... */
                           padding: EdgeInsets.all(4.0),
                           child: FFButtonWidget(
                             onPressed: () async {
-                              logFirebaseEvent(
-                                  'ATBASHLEVEL3_PAGE_AnswerButton_ON_TAP');
-                              logFirebaseEvent('AnswerButton_navigate_to');
-
                               context.pushNamed(
                                 ConfettiWinnerPageab3Widget.routeName,
                                 extra: <String, dynamic>{
@@ -454,9 +443,6 @@ MEE... */
                           padding: EdgeInsets.all(4.0),
                           child: FFButtonWidget(
                             onPressed: () async {
-                              logFirebaseEvent(
-                                  'ATBASHLEVEL3_PAGE_AnswerButton_ON_TAP');
-                              logFirebaseEvent('AnswerButton_alert_dialog');
                               await showDialog(
                                 context: context,
                                 builder: (alertDialogContext) {
@@ -514,9 +500,6 @@ MEE... */
                           padding: EdgeInsets.all(6.0),
                           child: FFButtonWidget(
                             onPressed: () async {
-                              logFirebaseEvent(
-                                  'ATBASHLEVEL3_PAGE_AnswerButton_ON_TAP');
-                              logFirebaseEvent('AnswerButton_alert_dialog');
                               await showDialog(
                                 context: context,
                                 builder: (alertDialogContext) {
@@ -574,9 +557,6 @@ MEE... */
                           padding: EdgeInsets.all(6.0),
                           child: FFButtonWidget(
                             onPressed: () async {
-                              logFirebaseEvent(
-                                  'ATBASHLEVEL3_PAGE_AnswerButton_ON_TAP');
-                              logFirebaseEvent('AnswerButton_alert_dialog');
                               await showDialog(
                                 context: context,
                                 builder: (alertDialogContext) {
@@ -642,8 +622,6 @@ MEE... */
                   hoverColor: Colors.transparent,
                   highlightColor: Colors.transparent,
                   onTap: () async {
-                    logFirebaseEvent('ATBASHLEVEL3_PAGE_Icon_1u29cel3_ON_TAP');
-                    logFirebaseEvent('Icon_alert_dialog');
                     await showDialog(
                       context: context,
                       builder: (alertDialogContext) {

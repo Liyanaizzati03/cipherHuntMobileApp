@@ -4,16 +4,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:integration_test/integration_test.dart';
-import 'package:cipherhunt/flutter_flow/flutter_flow_icon_button.dart';
-import 'package:cipherhunt/flutter_flow/flutter_flow_widgets.dart';
-import 'package:cipherhunt/flutter_flow/flutter_flow_theme.dart';
-import 'package:cipherhunt/index.dart';
-import 'package:cipherhunt/main.dart';
-import 'package:cipherhunt/flutter_flow/flutter_flow_util.dart';
+import 'package:cipher_hunt/flutter_flow/flutter_flow_icon_button.dart';
+import 'package:cipher_hunt/flutter_flow/flutter_flow_widgets.dart';
+import 'package:cipher_hunt/flutter_flow/flutter_flow_theme.dart';
+import 'package:cipher_hunt/index.dart';
+import 'package:cipher_hunt/main.dart';
+import 'package:cipher_hunt/flutter_flow/flutter_flow_util.dart';
 
 import 'package:provider/provider.dart';
-import 'package:cipherhunt/backend/firebase/firebase_config.dart';
-import 'package:cipherhunt/auth/firebase_auth/auth_util.dart';
+import 'package:cipher_hunt/backend/firebase/firebase_config.dart';
+import 'package:cipher_hunt/auth/firebase_auth/auth_util.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 void main() async {

@@ -43,8 +43,6 @@ class _Atbashlevel5WidgetState extends State<Atbashlevel5Widget>
     super.initState();
     _model = createModel(context, () => Atbashlevel5Model());
 
-    logFirebaseEvent('screen_view',
-        parameters: {'screen_name': 'atbashlevel5'});
     animationsMap.addAll({
       'textOnPageLoadAnimation1': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
@@ -131,8 +129,6 @@ class _Atbashlevel5WidgetState extends State<Atbashlevel5Widget>
               size: 30.0,
             ),
             onPressed: () async {
-              logFirebaseEvent('ATBASHLEVEL5_arrow_back_rounded_ICN_ON_T');
-              logFirebaseEvent('IconButton_navigate_back');
               context.pop();
             },
           ),
@@ -263,9 +259,6 @@ class _Atbashlevel5WidgetState extends State<Atbashlevel5Widget>
                                     hoverColor: Colors.transparent,
                                     highlightColor: Colors.transparent,
                                     onTap: () async {
-                                      logFirebaseEvent(
-                                          'ATBASHLEVEL5_PAGE_Image_y7piflkv_ON_TAP');
-                                      logFirebaseEvent('Image_expand_image');
                                       await Navigator.push(
                                         context,
                                         PageTransition(
@@ -399,9 +392,6 @@ GS... */
                         padding: EdgeInsets.all(4.0),
                         child: FFButtonWidget(
                           onPressed: () async {
-                            logFirebaseEvent(
-                                'ATBASHLEVEL5_PAGE_AnswerButton_ON_TAP');
-                            logFirebaseEvent('AnswerButton_alert_dialog');
                             await showDialog(
                               context: context,
                               builder: (alertDialogContext) {
@@ -459,10 +449,6 @@ GS... */
                         padding: EdgeInsets.all(4.0),
                         child: FFButtonWidget(
                           onPressed: () async {
-                            logFirebaseEvent(
-                                'ATBASHLEVEL5_PAGE_AnswerButton_ON_TAP');
-                            logFirebaseEvent('AnswerButton_navigate_to');
-
                             context.pushNamed(
                               ConfettiWinnerPageab5Widget.routeName,
                               queryParameters: {
@@ -512,9 +498,6 @@ GS... */
                         padding: EdgeInsets.all(6.0),
                         child: FFButtonWidget(
                           onPressed: () async {
-                            logFirebaseEvent(
-                                'ATBASHLEVEL5_PAGE_AnswerButton_ON_TAP');
-                            logFirebaseEvent('AnswerButton_alert_dialog');
                             await showDialog(
                               context: context,
                               builder: (alertDialogContext) {
@@ -572,9 +555,6 @@ GS... */
                         padding: EdgeInsets.all(6.0),
                         child: FFButtonWidget(
                           onPressed: () async {
-                            logFirebaseEvent(
-                                'ATBASHLEVEL5_PAGE_AnswerButton_ON_TAP');
-                            logFirebaseEvent('AnswerButton_alert_dialog');
                             await showDialog(
                               context: context,
                               builder: (alertDialogContext) {
@@ -640,8 +620,6 @@ GS... */
                   hoverColor: Colors.transparent,
                   highlightColor: Colors.transparent,
                   onTap: () async {
-                    logFirebaseEvent('ATBASHLEVEL5_PAGE_Icon_2y0ixhs9_ON_TAP');
-                    logFirebaseEvent('Icon_alert_dialog');
                     await showDialog(
                       context: context,
                       builder: (alertDialogContext) {

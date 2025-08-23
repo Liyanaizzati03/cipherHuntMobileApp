@@ -28,7 +28,6 @@ class _SettingsWidgetState extends State<SettingsWidget> {
     super.initState();
     _model = createModel(context, () => SettingsModel());
 
-    logFirebaseEvent('screen_view', parameters: {'screen_name': 'SETTINGS'});
     WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
@@ -63,8 +62,6 @@ class _SettingsWidgetState extends State<SettingsWidget> {
               size: 30.0,
             ),
             onPressed: () async {
-              logFirebaseEvent('SETTINGS_arrow_back_rounded_ICN_ON_TAP');
-              logFirebaseEvent('IconButton_navigate_back');
               context.pop();
             },
           ),
@@ -198,10 +195,6 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                                           size: 30.0,
                                         ),
                                         onPressed: () async {
-                                          logFirebaseEvent(
-                                              'SETTINGS_play_arrow_rounded_ICN_ON_TAP');
-                                          logFirebaseEvent(
-                                              'IconButton_play_sound');
                                           _model.soundPlayer ??= AudioPlayer();
                                           if (_model.soundPlayer!.playing) {
                                             await _model.soundPlayer!.stop();
@@ -263,10 +256,6 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                                           size: 30.0,
                                         ),
                                         onPressed: () async {
-                                          logFirebaseEvent(
-                                              'SETTINGS_PAGE_pause_rounded_ICN_ON_TAP');
-                                          logFirebaseEvent(
-                                              'IconButton_stop_sound');
                                           _model.soundPlayer?.stop();
                                         },
                                       ),

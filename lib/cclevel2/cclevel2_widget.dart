@@ -41,7 +41,6 @@ class _Cclevel2WidgetState extends State<Cclevel2Widget>
     super.initState();
     _model = createModel(context, () => Cclevel2Model());
 
-    logFirebaseEvent('screen_view', parameters: {'screen_name': 'cclevel2'});
     animationsMap.addAll({
       'textOnPageLoadAnimation1': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
@@ -116,8 +115,6 @@ class _Cclevel2WidgetState extends State<Cclevel2Widget>
               size: 30.0,
             ),
             onPressed: () async {
-              logFirebaseEvent('CCLEVEL2_arrow_back_rounded_ICN_ON_TAP');
-              logFirebaseEvent('IconButton_navigate_back');
               context.pop();
             },
           ),
@@ -220,9 +217,6 @@ class _Cclevel2WidgetState extends State<Cclevel2Widget>
                                       hoverColor: Colors.transparent,
                                       highlightColor: Colors.transparent,
                                       onTap: () async {
-                                        logFirebaseEvent(
-                                            'CCLEVEL2_PAGE_Image_f453s3rn_ON_TAP');
-                                        logFirebaseEvent('Image_expand_image');
                                         await Navigator.push(
                                           context,
                                           PageTransition(
@@ -395,10 +389,6 @@ class _Cclevel2WidgetState extends State<Cclevel2Widget>
                               padding: EdgeInsets.all(4.0),
                               child: FFButtonWidget(
                                 onPressed: () async {
-                                  logFirebaseEvent(
-                                      'CCLEVEL2_PAGE_AnswerButton_ON_TAP');
-                                  logFirebaseEvent('AnswerButton_navigate_to');
-
                                   context.pushNamed(
                                     ConfettiWinnerPageaCC2Widget.routeName,
                                     extra: <String, dynamic>{
@@ -451,9 +441,6 @@ class _Cclevel2WidgetState extends State<Cclevel2Widget>
                               padding: EdgeInsets.all(4.0),
                               child: FFButtonWidget(
                                 onPressed: () async {
-                                  logFirebaseEvent(
-                                      'CCLEVEL2_PAGE_Answerbutton_ON_TAP');
-                                  logFirebaseEvent('Answerbutton_alert_dialog');
                                   await showDialog(
                                     context: context,
                                     builder: (alertDialogContext) {
@@ -513,9 +500,6 @@ class _Cclevel2WidgetState extends State<Cclevel2Widget>
                               padding: EdgeInsets.all(6.0),
                               child: FFButtonWidget(
                                 onPressed: () async {
-                                  logFirebaseEvent(
-                                      'CCLEVEL2_PAGE_AnswerButton_ON_TAP');
-                                  logFirebaseEvent('AnswerButton_alert_dialog');
                                   await showDialog(
                                     context: context,
                                     builder: (alertDialogContext) {
@@ -574,9 +558,6 @@ class _Cclevel2WidgetState extends State<Cclevel2Widget>
                               padding: EdgeInsets.all(6.0),
                               child: FFButtonWidget(
                                 onPressed: () async {
-                                  logFirebaseEvent(
-                                      'CCLEVEL2_PAGE_AnswerButton_ON_TAP');
-                                  logFirebaseEvent('AnswerButton_alert_dialog');
                                   await showDialog(
                                     context: context,
                                     builder: (alertDialogContext) {
@@ -643,9 +624,6 @@ class _Cclevel2WidgetState extends State<Cclevel2Widget>
                         hoverColor: Colors.transparent,
                         highlightColor: Colors.transparent,
                         onTap: () async {
-                          logFirebaseEvent(
-                              'CCLEVEL2_PAGE_Icon_e2e29ttp_ON_TAP');
-                          logFirebaseEvent('Icon_alert_dialog');
                           await showDialog(
                             context: context,
                             builder: (alertDialogContext) {

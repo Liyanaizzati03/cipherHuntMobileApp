@@ -5,7 +5,7 @@ import '../../flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
 
 const _kDynamicLinksUrl = 'https://www.cipherhunt.com';
-const _kAppBundleId = 'io.flutterflow.cipherhunt';
+const _kAppBundleId = 'com.liyy.cipherhunt';
 
 Future<String> generateCurrentPageLink(
   BuildContext context, {

@@ -29,8 +29,6 @@ class _AtbashCipherLevelWidgetState extends State<AtbashCipherLevelWidget> {
     super.initState();
     _model = createModel(context, () => AtbashCipherLevelModel());
 
-    logFirebaseEvent('screen_view',
-        parameters: {'screen_name': 'AtbashCipherLevel'});
     WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
@@ -68,8 +66,6 @@ class _AtbashCipherLevelWidgetState extends State<AtbashCipherLevelWidget> {
               size: 24.0,
             ),
             onPressed: () async {
-              logFirebaseEvent('ATBASH_CIPHER_LEVEL_arrow_back_outlined_');
-              logFirebaseEvent('IconButton_navigate_to');
               if (Navigator.of(context).canPop()) {
                 context.pop();
               }
@@ -130,10 +126,6 @@ class _AtbashCipherLevelWidgetState extends State<AtbashCipherLevelWidget> {
                         hoverColor: Colors.transparent,
                         highlightColor: Colors.transparent,
                         onTap: () async {
-                          logFirebaseEvent(
-                              'ATBASH_CIPHER_LEVEL_Container_t6hy2cp2_O');
-                          logFirebaseEvent('Container_navigate_to');
-
                           context.pushNamed(
                             Atbashlevel1Widget.routeName,
                             queryParameters: {
@@ -233,10 +225,6 @@ class _AtbashCipherLevelWidgetState extends State<AtbashCipherLevelWidget> {
                         hoverColor: Colors.transparent,
                         highlightColor: Colors.transparent,
                         onTap: () async {
-                          logFirebaseEvent(
-                              'ATBASH_CIPHER_LEVEL_Container_wziqy9bs_O');
-                          logFirebaseEvent('Container_navigate_to');
-
                           context.pushNamed(
                             Atbashlevel2Widget.routeName,
                             queryParameters: {
@@ -350,10 +338,6 @@ class _AtbashCipherLevelWidgetState extends State<AtbashCipherLevelWidget> {
                         hoverColor: Colors.transparent,
                         highlightColor: Colors.transparent,
                         onTap: () async {
-                          logFirebaseEvent(
-                              'ATBASH_CIPHER_LEVEL_Container_4iybdj8x_O');
-                          logFirebaseEvent('Container_navigate_to');
-
                           context.pushNamed(
                             Atbashlevel3Widget.routeName,
                             queryParameters: {
@@ -457,10 +441,6 @@ class _AtbashCipherLevelWidgetState extends State<AtbashCipherLevelWidget> {
                         hoverColor: Colors.transparent,
                         highlightColor: Colors.transparent,
                         onTap: () async {
-                          logFirebaseEvent(
-                              'ATBASH_CIPHER_LEVEL_Container_eq94nfen_O');
-                          logFirebaseEvent('Container_navigate_to');
-
                           context.pushNamed(
                             Atbashlevel4Widget.routeName,
                             queryParameters: {
@@ -564,10 +544,6 @@ class _AtbashCipherLevelWidgetState extends State<AtbashCipherLevelWidget> {
                         hoverColor: Colors.transparent,
                         highlightColor: Colors.transparent,
                         onTap: () async {
-                          logFirebaseEvent(
-                              'ATBASH_CIPHER_LEVEL_Container_57o0j9m1_O');
-                          logFirebaseEvent('Container_navigate_to');
-
                           context.pushNamed(
                             Atbashlevel5Widget.routeName,
                             queryParameters: {

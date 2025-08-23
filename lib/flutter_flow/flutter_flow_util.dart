@@ -31,7 +31,6 @@ export 'package:cloud_firestore/cloud_firestore.dart'
 export 'package:firebase_core/firebase_core.dart';
 export 'package:page_transition/page_transition.dart';
 export 'internationalization.dart' show FFLocalizations;
-export '/backend/firebase_analytics/analytics.dart';
 export 'nav/nav.dart';
 
 T valueOrDefault<T>(T? value, T defaultValue) =>

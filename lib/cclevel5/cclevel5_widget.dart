@@ -37,7 +37,6 @@ class _Cclevel5WidgetState extends State<Cclevel5Widget>
     super.initState();
     _model = createModel(context, () => Cclevel5Model());
 
-    logFirebaseEvent('screen_view', parameters: {'screen_name': 'cclevel5'});
     animationsMap.addAll({
       'textOnPageLoadAnimation1': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
@@ -114,8 +113,6 @@ class _Cclevel5WidgetState extends State<Cclevel5Widget>
               size: 30.0,
             ),
             onPressed: () async {
-              logFirebaseEvent('CCLEVEL5_arrow_back_rounded_ICN_ON_TAP');
-              logFirebaseEvent('IconButton_navigate_back');
               context.pop();
             },
           ),
@@ -218,9 +215,6 @@ class _Cclevel5WidgetState extends State<Cclevel5Widget>
                                       hoverColor: Colors.transparent,
                                       highlightColor: Colors.transparent,
                                       onTap: () async {
-                                        logFirebaseEvent(
-                                            'CCLEVEL5_PAGE_Image_5me1001e_ON_TAP');
-                                        logFirebaseEvent('Image_expand_image');
                                         await Navigator.push(
                                           context,
                                           PageTransition(
@@ -399,9 +393,6 @@ WOOD ... */
                               padding: EdgeInsets.all(4.0),
                               child: FFButtonWidget(
                                 onPressed: () async {
-                                  logFirebaseEvent(
-                                      'CCLEVEL5_PAGE_AnswerButton_ON_TAP');
-                                  logFirebaseEvent('AnswerButton_alert_dialog');
                                   await showDialog(
                                     context: context,
                                     builder: (alertDialogContext) {
@@ -460,9 +451,6 @@ WOOD ... */
                               padding: EdgeInsets.all(4.0),
                               child: FFButtonWidget(
                                 onPressed: () async {
-                                  logFirebaseEvent(
-                                      'CCLEVEL5_PAGE_Answerbutton_ON_TAP');
-                                  logFirebaseEvent('Answerbutton_alert_dialog');
                                   await showDialog(
                                     context: context,
                                     builder: (alertDialogContext) {
@@ -521,9 +509,6 @@ WOOD ... */
                               padding: EdgeInsets.all(6.0),
                               child: FFButtonWidget(
                                 onPressed: () async {
-                                  logFirebaseEvent(
-                                      'CCLEVEL5_PAGE_AnswerButton_ON_TAP');
-                                  logFirebaseEvent('AnswerButton_alert_dialog');
                                   await showDialog(
                                     context: context,
                                     builder: (alertDialogContext) {
@@ -582,10 +567,6 @@ WOOD ... */
                               padding: EdgeInsets.all(6.0),
                               child: FFButtonWidget(
                                 onPressed: () async {
-                                  logFirebaseEvent(
-                                      'CCLEVEL5_PAGE_AnswerButton_ON_TAP');
-                                  logFirebaseEvent('AnswerButton_navigate_to');
-
                                   context.pushNamed(
                                     ConfettiWinnerPageCC5Widget.routeName,
                                     extra: <String, dynamic>{
@@ -646,9 +627,6 @@ WOOD ... */
                         hoverColor: Colors.transparent,
                         highlightColor: Colors.transparent,
                         onTap: () async {
-                          logFirebaseEvent(
-                              'CCLEVEL5_PAGE_Icon_69ogpkc8_ON_TAP');
-                          logFirebaseEvent('Icon_alert_dialog');
                           await showDialog(
                             context: context,
                             builder: (alertDialogContext) {

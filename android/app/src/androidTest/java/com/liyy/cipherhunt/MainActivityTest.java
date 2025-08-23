@@ -1,4 +1,4 @@
-package io.flutterflow.cipherhunt;
+package com.liyy.cipherhunt;
 
 import androidx.test.rule.ActivityTestRule;
 import dev.flutter.plugins.integration_test.FlutterTestRunner;

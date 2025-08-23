@@ -46,7 +46,6 @@ class _Morsecode1WidgetState extends State<Morsecode1Widget>
     super.initState();
     _model = createModel(context, () => Morsecode1Model());
 
-    logFirebaseEvent('screen_view', parameters: {'screen_name': 'morsecode1'});
     animationsMap.addAll({
       'textOnPageLoadAnimation1': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
@@ -135,8 +134,6 @@ class _Morsecode1WidgetState extends State<Morsecode1Widget>
               size: 30.0,
             ),
             onPressed: () async {
-              logFirebaseEvent('MORSECODE1_arrow_back_rounded_ICN_ON_TAP');
-              logFirebaseEvent('IconButton_navigate_back');
               context.pop();
             },
           ),
@@ -271,9 +268,6 @@ class _Morsecode1WidgetState extends State<Morsecode1Widget>
                                       hoverColor: Colors.transparent,
                                       highlightColor: Colors.transparent,
                                       onTap: () async {
-                                        logFirebaseEvent(
-                                            'MORSECODE1_PAGE_Image_97y3bwlm_ON_TAP');
-                                        logFirebaseEvent('Image_expand_image');
                                         await Navigator.push(
                                           context,
                                           PageTransition(
@@ -411,8 +405,6 @@ class _Morsecode1WidgetState extends State<Morsecode1Widget>
                         padding: EdgeInsets.all(4.0),
                         child: FFButtonWidget(
                           onPressed: () async {
-                            logFirebaseEvent('MORSECODE1_PAGE_FOOD_BTN_ON_TAP');
-                            logFirebaseEvent('Button_alert_dialog');
                             await showDialog(
                               context: context,
                               builder: (alertDialogContext) {
@@ -469,10 +461,6 @@ class _Morsecode1WidgetState extends State<Morsecode1Widget>
                         padding: EdgeInsets.all(4.0),
                         child: FFButtonWidget(
                           onPressed: () async {
-                            logFirebaseEvent(
-                                'MORSECODE1_PAGE_corectOption_ON_TAP');
-                            logFirebaseEvent('corectOption_navigate_to');
-
                             context.pushNamed(
                               ConfettiWinnerPageMC1Widget.routeName,
                               queryParameters: {
@@ -522,8 +510,6 @@ class _Morsecode1WidgetState extends State<Morsecode1Widget>
                         padding: EdgeInsets.all(6.0),
                         child: FFButtonWidget(
                           onPressed: () async {
-                            logFirebaseEvent('MORSECODE1_PAGE_MOOD_BTN_ON_TAP');
-                            logFirebaseEvent('Button_alert_dialog');
                             await showDialog(
                               context: context,
                               builder: (alertDialogContext) {
@@ -580,8 +566,6 @@ class _Morsecode1WidgetState extends State<Morsecode1Widget>
                         padding: EdgeInsets.all(6.0),
                         child: FFButtonWidget(
                           onPressed: () async {
-                            logFirebaseEvent('MORSECODE1_PAGE_LOOP_BTN_ON_TAP');
-                            logFirebaseEvent('Button_alert_dialog');
                             await showDialog(
                               context: context,
                               builder: (alertDialogContext) {
@@ -646,8 +630,6 @@ class _Morsecode1WidgetState extends State<Morsecode1Widget>
                   hoverColor: Colors.transparent,
                   highlightColor: Colors.transparent,
                   onTap: () async {
-                    logFirebaseEvent('MORSECODE1_PAGE_Icon_6w03rn7z_ON_TAP');
-                    logFirebaseEvent('Icon_alert_dialog');
                     await showDialog(
                       context: context,
                       builder: (alertDialogContext) {

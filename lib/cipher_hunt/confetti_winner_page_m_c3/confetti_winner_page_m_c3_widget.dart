@@ -39,8 +39,6 @@ class _ConfettiWinnerPageMC3WidgetState
     super.initState();
     _model = createModel(context, () => ConfettiWinnerPageMC3Model());
 
-    logFirebaseEvent('screen_view',
-        parameters: {'screen_name': 'ConfettiWinnerPageMC3'});
     animationsMap.addAll({
       'textOnPageLoadAnimation1': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
@@ -324,10 +322,6 @@ class _ConfettiWinnerPageMC3WidgetState
                     children: [
                       FFButtonWidget(
                         onPressed: () async {
-                          logFirebaseEvent(
-                              'CONFETTI_WINNER_M_C3_REPLAY_LEVEL_BTN_ON');
-                          logFirebaseEvent('Button_navigate_to');
-
                           context.pushNamed(
                             Morsecode3Widget.routeName,
                             queryParameters: {
@@ -387,10 +381,6 @@ class _ConfettiWinnerPageMC3WidgetState
                       ),
                       FFButtonWidget(
                         onPressed: () async {
-                          logFirebaseEvent(
-                              'CONFETTI_WINNER_M_C3_MAIN_MENU_BTN_ON_TA');
-                          logFirebaseEvent('Button_navigate_to');
-
                           context.pushNamed(MainMenuWidget.routeName);
                         },
                         text: FFLocalizations.of(context).getText(
@@ -428,10 +418,6 @@ class _ConfettiWinnerPageMC3WidgetState
                       ),
                       FFButtonWidget(
                         onPressed: () async {
-                          logFirebaseEvent(
-                              'CONFETTI_WINNER_M_C3_NEXT_LEVEL_BTN_ON_T');
-                          logFirebaseEvent('Button_navigate_to');
-
                           context.pushNamed(
                             Morsecode4Widget.routeName,
                             queryParameters: {

@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>745477093012-au74a3gcpr50275uvluptr7n1bmvpnor.apps.googleusercontent.com</string>
+	<string>745477093012-8m9ugstuh631ikhg8sr3nh97ckr80q92.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.745477093012-au74a3gcpr50275uvluptr7n1bmvpnor</string>
+	<string>com.googleusercontent.apps.745477093012-8m9ugstuh631ikhg8sr3nh97ckr80q92</string>
 	<key>ANDROID_CLIENT_ID</key>
-	<string>745477093012-ufbf4tcj8djk3qgmupvh3o2da3mll26j.apps.googleusercontent.com</string>
+	<string>745477093012-16esb7ha841dmj1t9ts3d7sjhu7vjesj.apps.googleusercontent.com</string>
 	<key>API_KEY</key>
 	<string>AIzaSyCcI23XoDcgVpJxoC5LnikFu3FZmOTv1IU</string>
 	<key>GCM_SENDER_ID</key>
@@ -15,7 +15,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>io.flutterflow.cipherhunt</string>
+	<string>com.liyy.cipherhunt</string>
 	<key>PROJECT_ID</key>
 	<string>cipherhunt-8l4cam</string>
 	<key>STORAGE_BUCKET</key>
@@ -31,6 +31,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:745477093012:ios:76d22b05e5e3908aa82681</string>
+	<string>1:745477093012:ios:3c6561cbdee637d0a82681</string>
 </dict>
 </plist>

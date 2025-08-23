@@ -31,11 +31,8 @@ class _MainMenuWidgetState extends State<MainMenuWidget> {
     super.initState();
     _model = createModel(context, () => MainMenuModel());
 
-    logFirebaseEvent('screen_view', parameters: {'screen_name': 'MainMenu'});
     // On page load action.
     SchedulerBinding.instance.addPostFrameCallback((_) async {
-      logFirebaseEvent('MAIN_MENU_PAGE_MainMenu_ON_INIT_STATE');
-      logFirebaseEvent('MainMenu_play_sound');
       _model.soundPlayer ??= AudioPlayer();
       if (_model.soundPlayer!.playing) {
         await _model.soundPlayer!.stop();
@@ -167,10 +164,6 @@ class _MainMenuWidgetState extends State<MainMenuWidget> {
                               child: FFButtonWidget(
                                 key: ValueKey('PLAY_cxtf'),
                                 onPressed: () async {
-                                  logFirebaseEvent(
-                                      'MAIN_MENU_PAGE_PLAY_ON_TAP');
-                                  logFirebaseEvent('PLAY_navigate_to');
-
                                   context.pushNamed(
                                     CategoriesPagesWidget.routeName,
                                     extra: <String, dynamic>{
@@ -242,10 +235,6 @@ class _MainMenuWidgetState extends State<MainMenuWidget> {
                               child: FFButtonWidget(
                                 key: ValueKey('Setting_0gt1'),
                                 onPressed: () async {
-                                  logFirebaseEvent(
-                                      'MAIN_MENU_PAGE_Setting_ON_TAP');
-                                  logFirebaseEvent('Setting_navigate_to');
-
                                   context.pushNamed(
                                     SettingsWidget.routeName,
                                     extra: <String, dynamic>{
@@ -306,10 +295,6 @@ class _MainMenuWidgetState extends State<MainMenuWidget> {
                               child: FFButtonWidget(
                                 key: ValueKey('INFO_n34g'),
                                 onPressed: () async {
-                                  logFirebaseEvent(
-                                      'MAIN_MENU_PAGE_INFO_ON_TAP');
-                                  logFirebaseEvent('INFO_navigate_to');
-
                                   context.pushNamed(
                                     InfoWidget.routeName,
                                     extra: <String, dynamic>{
@@ -371,9 +356,6 @@ class _MainMenuWidgetState extends State<MainMenuWidget> {
                               child: FFButtonWidget(
                                 key: ValueKey('exitApp_6t2t'),
                                 onPressed: () async {
-                                  logFirebaseEvent(
-                                      'MAIN_MENU_PAGE_exitApp_ON_TAP');
-                                  logFirebaseEvent('exitApp_auth');
                                   GoRouter.of(context).prepareAuthEvent();
                                   await authManager.signOut();
                                   GoRouter.of(context).clearRedirectLocation();

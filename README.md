@@ -1,4 +1,4 @@
-# Cipherhunt
+# cipherHunt
 
 A new Flutter project.
 

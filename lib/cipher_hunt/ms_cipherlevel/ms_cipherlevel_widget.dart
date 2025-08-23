@@ -28,8 +28,6 @@ class _MsCipherlevelWidgetState extends State<MsCipherlevelWidget> {
     super.initState();
     _model = createModel(context, () => MsCipherlevelModel());
 
-    logFirebaseEvent('screen_view',
-        parameters: {'screen_name': 'msCipherlevel'});
     WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
@@ -67,8 +65,6 @@ class _MsCipherlevelWidgetState extends State<MsCipherlevelWidget> {
               size: 24.0,
             ),
             onPressed: () async {
-              logFirebaseEvent('MS_CIPHERLEVEL_arrow_back_outlined_ICN_O');
-              logFirebaseEvent('IconButton_navigate_back');
               context.safePop();
             },
           ),
@@ -118,10 +114,6 @@ class _MsCipherlevelWidgetState extends State<MsCipherlevelWidget> {
                         hoverColor: Colors.transparent,
                         highlightColor: Colors.transparent,
                         onTap: () async {
-                          logFirebaseEvent(
-                              'MS_CIPHERLEVEL_Container_yix30zha_ON_TAP');
-                          logFirebaseEvent('Container_navigate_to');
-
                           context.pushNamed(
                             Morsecode1Widget.routeName,
                             queryParameters: {
@@ -225,10 +217,6 @@ class _MsCipherlevelWidgetState extends State<MsCipherlevelWidget> {
                         hoverColor: Colors.transparent,
                         highlightColor: Colors.transparent,
                         onTap: () async {
-                          logFirebaseEvent(
-                              'MS_CIPHERLEVEL_Container_kxxjcims_ON_TAP');
-                          logFirebaseEvent('Container_navigate_to');
-
                           context.pushNamed(
                             Morsecode2Widget.routeName,
                             queryParameters: {
@@ -346,10 +334,6 @@ class _MsCipherlevelWidgetState extends State<MsCipherlevelWidget> {
                         hoverColor: Colors.transparent,
                         highlightColor: Colors.transparent,
                         onTap: () async {
-                          logFirebaseEvent(
-                              'MS_CIPHERLEVEL_Container_387ro621_ON_TAP');
-                          logFirebaseEvent('Container_navigate_to');
-
                           context.pushNamed(
                             Morsecode3Widget.routeName,
                             queryParameters: {
@@ -451,10 +435,6 @@ class _MsCipherlevelWidgetState extends State<MsCipherlevelWidget> {
                         hoverColor: Colors.transparent,
                         highlightColor: Colors.transparent,
                         onTap: () async {
-                          logFirebaseEvent(
-                              'MS_CIPHERLEVEL_Container_3ds7z706_ON_TAP');
-                          logFirebaseEvent('Container_navigate_to');
-
                           context.pushNamed(
                             Morsecode4Widget.routeName,
                             queryParameters: {
@@ -565,10 +545,6 @@ class _MsCipherlevelWidgetState extends State<MsCipherlevelWidget> {
                         hoverColor: Colors.transparent,
                         highlightColor: Colors.transparent,
                         onTap: () async {
-                          logFirebaseEvent(
-                              'MS_CIPHERLEVEL_Container_7abeqwga_ON_TAP');
-                          logFirebaseEvent('Container_navigate_to');
-
                           context.pushNamed(
                             Morsecode5Widget.routeName,
                             queryParameters: {

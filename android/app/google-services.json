@@ -39,10 +39,10 @@
               "client_type": 3
             },
             {
-              "client_id": "745477093012-au74a3gcpr50275uvluptr7n1bmvpnor.apps.googleusercontent.com",
+              "client_id": "745477093012-8m9ugstuh631ikhg8sr3nh97ckr80q92.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "io.flutterflow.cipherhunt"
+                "bundle_id": "com.liyy.cipherhunt"
               }
             }
           ]

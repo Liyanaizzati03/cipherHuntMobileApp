@@ -39,8 +39,6 @@ class _ConfettiWinnerPagecc1WidgetState
     super.initState();
     _model = createModel(context, () => ConfettiWinnerPagecc1Model());
 
-    logFirebaseEvent('screen_view',
-        parameters: {'screen_name': 'ConfettiWinnerPagecc1'});
     animationsMap.addAll({
       'textOnPageLoadAnimation1': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
@@ -326,10 +324,6 @@ You used a C... */
                     children: [
                       FFButtonWidget(
                         onPressed: () async {
-                          logFirebaseEvent(
-                              'CONFETTI_WINNER_PAGECC1_REPLAY_LEVEL_BTN');
-                          logFirebaseEvent('Button_navigate_to');
-
                           context.pushNamed(
                             Cclevel1Widget.routeName,
                             queryParameters: {
@@ -389,10 +383,6 @@ You used a C... */
                       ),
                       FFButtonWidget(
                         onPressed: () async {
-                          logFirebaseEvent(
-                              'CONFETTI_WINNER_PAGECC1_MAIN_MENU_BTN_ON');
-                          logFirebaseEvent('Button_navigate_to');
-
                           context.pushNamed(MainMenuWidget.routeName);
                         },
                         text: FFLocalizations.of(context).getText(
@@ -431,10 +421,6 @@ You used a C... */
                       FFButtonWidget(
                         key: ValueKey('Button_4nlp'),
                         onPressed: () async {
-                          logFirebaseEvent(
-                              'CONFETTI_WINNER_PAGECC1_NEXT_LEVEL_BTN_O');
-                          logFirebaseEvent('Button_navigate_to');
-
                           context.pushNamed(
                             Cclevel2Widget.routeName,
                             queryParameters: {

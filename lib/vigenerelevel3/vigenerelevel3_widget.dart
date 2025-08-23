@@ -45,8 +45,6 @@ class _Vigenerelevel3WidgetState extends State<Vigenerelevel3Widget>
     super.initState();
     _model = createModel(context, () => Vigenerelevel3Model());
 
-    logFirebaseEvent('screen_view',
-        parameters: {'screen_name': 'vigenerelevel3'});
     animationsMap.addAll({
       'textOnPageLoadAnimation1': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
@@ -121,8 +119,6 @@ class _Vigenerelevel3WidgetState extends State<Vigenerelevel3Widget>
               size: 30.0,
             ),
             onPressed: () async {
-              logFirebaseEvent('VIGENERELEVEL3_arrow_back_rounded_ICN_ON');
-              logFirebaseEvent('IconButton_navigate_back');
               context.pop();
             },
           ),
@@ -225,9 +221,6 @@ class _Vigenerelevel3WidgetState extends State<Vigenerelevel3Widget>
                                       hoverColor: Colors.transparent,
                                       highlightColor: Colors.transparent,
                                       onTap: () async {
-                                        logFirebaseEvent(
-                                            'VIGENERELEVEL3_Image_gdlsm3eb_ON_TAP');
-                                        logFirebaseEvent('Image_expand_image');
                                         await Navigator.push(
                                           context,
                                           PageTransition(
@@ -405,9 +398,6 @@ FOOD ... */
                               padding: EdgeInsets.all(4.0),
                               child: FFButtonWidget(
                                 onPressed: () async {
-                                  logFirebaseEvent(
-                                      'VIGENERELEVEL3_PAGE_Answerbutton_ON_TAP');
-                                  logFirebaseEvent('Answerbutton_alert_dialog');
                                   await showDialog(
                                     context: context,
                                     builder: (alertDialogContext) {
@@ -466,9 +456,6 @@ FOOD ... */
                               padding: EdgeInsets.all(6.0),
                               child: FFButtonWidget(
                                 onPressed: () async {
-                                  logFirebaseEvent(
-                                      'VIGENERELEVEL3_PAGE_AnswerButton_ON_TAP');
-                                  logFirebaseEvent('AnswerButton_alert_dialog');
                                   await showDialog(
                                     context: context,
                                     builder: (alertDialogContext) {
@@ -527,9 +514,6 @@ FOOD ... */
                               padding: EdgeInsets.all(6.0),
                               child: FFButtonWidget(
                                 onPressed: () async {
-                                  logFirebaseEvent(
-                                      'VIGENERELEVEL3_PAGE_AnswerButton_ON_TAP');
-                                  logFirebaseEvent('AnswerButton_alert_dialog');
                                   await showDialog(
                                     context: context,
                                     builder: (alertDialogContext) {
@@ -588,10 +572,6 @@ FOOD ... */
                               padding: EdgeInsets.all(4.0),
                               child: FFButtonWidget(
                                 onPressed: () async {
-                                  logFirebaseEvent(
-                                      'VIGENERELEVEL3_PAGE_AnswerButton_ON_TAP');
-                                  logFirebaseEvent('AnswerButton_navigate_to');
-
                                   context.pushNamed(
                                     ConfettiWinnerPageab3Widget.routeName,
                                     queryParameters: {
@@ -658,9 +638,6 @@ FOOD ... */
                         hoverColor: Colors.transparent,
                         highlightColor: Colors.transparent,
                         onTap: () async {
-                          logFirebaseEvent(
-                              'VIGENERELEVEL3_PAGE_Icon_axb0vt6j_ON_TAP');
-                          logFirebaseEvent('Icon_alert_dialog');
                           await showDialog(
                             context: context,
                             builder: (alertDialogContext) {

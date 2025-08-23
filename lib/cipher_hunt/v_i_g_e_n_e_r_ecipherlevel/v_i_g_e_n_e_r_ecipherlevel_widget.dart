@@ -29,8 +29,6 @@ class _VIGENEREcipherlevelWidgetState extends State<VIGENEREcipherlevelWidget> {
     super.initState();
     _model = createModel(context, () => VIGENEREcipherlevelModel());
 
-    logFirebaseEvent('screen_view',
-        parameters: {'screen_name': 'VIGENEREcipherlevel'});
     WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
@@ -68,8 +66,6 @@ class _VIGENEREcipherlevelWidgetState extends State<VIGENEREcipherlevelWidget> {
               size: 24.0,
             ),
             onPressed: () async {
-              logFirebaseEvent('V_I_G_E_N_E_R_ECIPHERLEVEL_arrow_back_ou');
-              logFirebaseEvent('IconButton_navigate_back');
               context.safePop();
             },
           ),
@@ -77,7 +73,7 @@ class _VIGENEREcipherlevelWidgetState extends State<VIGENEREcipherlevelWidget> {
             padding: EdgeInsets.all(8.0),
             child: Text(
               FFLocalizations.of(context).getText(
-                '0aawnscs' /* Choose Level */,
+                'tqn5knq9' /* Choose Level */,
               ),
               style: FlutterFlowTheme.of(context).displayLarge.override(
                     font: GoogleFonts.spaceGrotesk(
@@ -119,10 +115,6 @@ class _VIGENEREcipherlevelWidgetState extends State<VIGENEREcipherlevelWidget> {
                         hoverColor: Colors.transparent,
                         highlightColor: Colors.transparent,
                         onTap: () async {
-                          logFirebaseEvent(
-                              'V_I_G_E_N_E_R_ECIPHERLEVEL_Container_af4');
-                          logFirebaseEvent('Container_navigate_to');
-
                           context.pushNamed(
                             Vigenerelevel1Widget.routeName,
                             queryParameters: {
@@ -182,7 +174,7 @@ class _VIGENEREcipherlevelWidgetState extends State<VIGENEREcipherlevelWidget> {
                                     alignment: AlignmentDirectional(0.0, 0.0),
                                     child: Text(
                                       FFLocalizations.of(context).getText(
-                                        '8vhjuba5' /* LEVEL 1 */,
+                                        'd2i0dtek' /* LEVEL 1 */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
                                           .displayMedium
@@ -226,10 +218,6 @@ class _VIGENEREcipherlevelWidgetState extends State<VIGENEREcipherlevelWidget> {
                         hoverColor: Colors.transparent,
                         highlightColor: Colors.transparent,
                         onTap: () async {
-                          logFirebaseEvent(
-                              'V_I_G_E_N_E_R_ECIPHERLEVEL_Container_lzg');
-                          logFirebaseEvent('Container_navigate_to');
-
                           context.pushNamed(
                             Vigenerelevel2Widget.routeName,
                             queryParameters: {
@@ -288,7 +276,7 @@ class _VIGENEREcipherlevelWidgetState extends State<VIGENEREcipherlevelWidget> {
                                         padding: EdgeInsets.all(4.0),
                                         child: Text(
                                           FFLocalizations.of(context).getText(
-                                            'hw24cpmi' /* LEVEL 2 */,
+                                            'zixpt0sg' /* LEVEL 2 */,
                                           ),
                                           textAlign: TextAlign.center,
                                           style: FlutterFlowTheme.of(context)
@@ -340,10 +328,6 @@ class _VIGENEREcipherlevelWidgetState extends State<VIGENEREcipherlevelWidget> {
                         hoverColor: Colors.transparent,
                         highlightColor: Colors.transparent,
                         onTap: () async {
-                          logFirebaseEvent(
-                              'V_I_G_E_N_E_R_ECIPHERLEVEL_Container_sun');
-                          logFirebaseEvent('Container_navigate_to');
-
                           context.pushNamed(
                             Vigenerelevel3Widget.routeName,
                             queryParameters: {
@@ -399,7 +383,7 @@ class _VIGENEREcipherlevelWidgetState extends State<VIGENEREcipherlevelWidget> {
                                       padding: EdgeInsets.all(4.0),
                                       child: Text(
                                         FFLocalizations.of(context).getText(
-                                          '7tse67e8' /* LEVEL 3 */,
+                                          'z2zatx67' /* LEVEL 3 */,
                                         ),
                                         textAlign: TextAlign.center,
                                         style: FlutterFlowTheme.of(context)
@@ -445,10 +429,6 @@ class _VIGENEREcipherlevelWidgetState extends State<VIGENEREcipherlevelWidget> {
                         hoverColor: Colors.transparent,
                         highlightColor: Colors.transparent,
                         onTap: () async {
-                          logFirebaseEvent(
-                              'V_I_G_E_N_E_R_ECIPHERLEVEL_Container_eic');
-                          logFirebaseEvent('Container_navigate_to');
-
                           context.pushNamed(
                             Vigenerelevel4Widget.routeName,
                             queryParameters: {
@@ -510,7 +490,7 @@ class _VIGENEREcipherlevelWidgetState extends State<VIGENEREcipherlevelWidget> {
                                       padding: EdgeInsets.all(4.0),
                                       child: Text(
                                         FFLocalizations.of(context).getText(
-                                          '0p5nn2zg' /* LEVEL 4 */,
+                                          'dxfk91sh' /* LEVEL 4 */,
                                         ),
                                         textAlign: TextAlign.center,
                                         style: FlutterFlowTheme.of(context)
@@ -556,10 +536,6 @@ class _VIGENEREcipherlevelWidgetState extends State<VIGENEREcipherlevelWidget> {
                         hoverColor: Colors.transparent,
                         highlightColor: Colors.transparent,
                         onTap: () async {
-                          logFirebaseEvent(
-                              'V_I_G_E_N_E_R_ECIPHERLEVEL_Container_he8');
-                          logFirebaseEvent('Container_navigate_to');
-
                           context.pushNamed(
                             Vigenerelevel5Widget.routeName,
                             queryParameters: {
@@ -621,7 +597,7 @@ class _VIGENEREcipherlevelWidgetState extends State<VIGENEREcipherlevelWidget> {
                                       padding: EdgeInsets.all(4.0),
                                       child: Text(
                                         FFLocalizations.of(context).getText(
-                                          'j5obthkg' /* LEVEL 5 */,
+                                          'digasrbc' /* LEVEL 5 */,
                                         ),
                                         textAlign: TextAlign.center,
                                         style: FlutterFlowTheme.of(context)

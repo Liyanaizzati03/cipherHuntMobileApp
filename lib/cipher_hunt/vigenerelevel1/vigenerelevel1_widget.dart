@@ -46,8 +46,6 @@ class _Vigenerelevel1WidgetState extends State<Vigenerelevel1Widget>
     super.initState();
     _model = createModel(context, () => Vigenerelevel1Model());
 
-    logFirebaseEvent('screen_view',
-        parameters: {'screen_name': 'vigenerelevel1'});
     animationsMap.addAll({
       'textOnPageLoadAnimation1': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
@@ -136,8 +134,6 @@ class _Vigenerelevel1WidgetState extends State<Vigenerelevel1Widget>
               size: 30.0,
             ),
             onPressed: () async {
-              logFirebaseEvent('VIGENERELEVEL1_arrow_back_rounded_ICN_ON');
-              logFirebaseEvent('IconButton_navigate_back');
               context.pop();
             },
           ),
@@ -272,9 +268,6 @@ class _Vigenerelevel1WidgetState extends State<Vigenerelevel1Widget>
                                       hoverColor: Colors.transparent,
                                       highlightColor: Colors.transparent,
                                       onTap: () async {
-                                        logFirebaseEvent(
-                                            'VIGENERELEVEL1_Image_dajqe2g6_ON_TAP');
-                                        logFirebaseEvent('Image_expand_image');
                                         await Navigator.push(
                                           context,
                                           PageTransition(
@@ -412,9 +405,6 @@ COM... */
                         padding: EdgeInsets.all(4.0),
                         child: FFButtonWidget(
                           onPressed: () async {
-                            logFirebaseEvent(
-                                'VIGENERELEVEL1_PAGE_MSKZYROU_BTN_ON_TAP');
-                            logFirebaseEvent('Button_alert_dialog');
                             await showDialog(
                               context: context,
                               builder: (alertDialogContext) {
@@ -471,10 +461,6 @@ COM... */
                         padding: EdgeInsets.all(4.0),
                         child: FFButtonWidget(
                           onPressed: () async {
-                            logFirebaseEvent(
-                                'VIGENERELEVEL1_PAGE_corectOption_ON_TAP');
-                            logFirebaseEvent('corectOption_navigate_to');
-
                             context.pushNamed(
                               ConfettiWinnerPageV1Widget.routeName,
                               queryParameters: {
@@ -531,9 +517,6 @@ COM... */
                         padding: EdgeInsets.all(6.0),
                         child: FFButtonWidget(
                           onPressed: () async {
-                            logFirebaseEvent(
-                                'VIGENERELEVEL1_PAGE_MSKZYRQV_BTN_ON_TAP');
-                            logFirebaseEvent('Button_alert_dialog');
                             await showDialog(
                               context: context,
                               builder: (alertDialogContext) {
@@ -590,9 +573,6 @@ COM... */
                         padding: EdgeInsets.all(6.0),
                         child: FFButtonWidget(
                           onPressed: () async {
-                            logFirebaseEvent(
-                                'VIGENERELEVEL1_PAGE_MSKZYRWL_BTN_ON_TAP');
-                            logFirebaseEvent('Button_alert_dialog');
                             await showDialog(
                               context: context,
                               builder: (alertDialogContext) {
@@ -657,9 +637,6 @@ COM... */
                   hoverColor: Colors.transparent,
                   highlightColor: Colors.transparent,
                   onTap: () async {
-                    logFirebaseEvent(
-                        'VIGENERELEVEL1_PAGE_Icon_09rv7ev2_ON_TAP');
-                    logFirebaseEvent('Icon_alert_dialog');
                     await showDialog(
                       context: context,
                       builder: (alertDialogContext) {

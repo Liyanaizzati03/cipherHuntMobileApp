@@ -30,8 +30,6 @@ class _CaesercipherlevelWidgetState extends State<CaesercipherlevelWidget> {
     super.initState();
     _model = createModel(context, () => CaesercipherlevelModel());
 
-    logFirebaseEvent('screen_view',
-        parameters: {'screen_name': 'caesercipherlevel'});
     WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
@@ -69,8 +67,6 @@ class _CaesercipherlevelWidgetState extends State<CaesercipherlevelWidget> {
               size: 24.0,
             ),
             onPressed: () async {
-              logFirebaseEvent('CAESERCIPHERLEVEL_arrow_back_outlined_IC');
-              logFirebaseEvent('IconButton_navigate_to');
               if (Navigator.of(context).canPop()) {
                 context.pop();
               }
@@ -124,10 +120,6 @@ class _CaesercipherlevelWidgetState extends State<CaesercipherlevelWidget> {
                   hoverColor: Colors.transparent,
                   highlightColor: Colors.transparent,
                   onTap: () async {
-                    logFirebaseEvent(
-                        'CAESERCIPHERLEVEL_ListView_todeeurq_ON_T');
-                    logFirebaseEvent('ListView_navigate_to');
-
                     context.pushNamed(
                       Cclevel1Widget.routeName,
                       queryParameters: {
@@ -155,10 +147,6 @@ class _CaesercipherlevelWidgetState extends State<CaesercipherlevelWidget> {
                           hoverColor: Colors.transparent,
                           highlightColor: Colors.transparent,
                           onTap: () async {
-                            logFirebaseEvent(
-                                'CAESERCIPHERLEVEL_Container_6gsh3588_ON_');
-                            logFirebaseEvent('Container_navigate_to');
-
                             context.pushNamed(
                               Cclevel1Widget.routeName,
                               queryParameters: {
@@ -218,10 +206,6 @@ class _CaesercipherlevelWidgetState extends State<CaesercipherlevelWidget> {
                                 hoverColor: Colors.transparent,
                                 highlightColor: Colors.transparent,
                                 onTap: () async {
-                                  logFirebaseEvent(
-                                      'CAESERCIPHERLEVEL_Row_zg0elb9s_ON_TAP');
-                                  logFirebaseEvent('Row_navigate_to');
-
                                   context.pushNamed(
                                     Cclevel1Widget.routeName,
                                     queryParameters: {
@@ -299,10 +283,6 @@ class _CaesercipherlevelWidgetState extends State<CaesercipherlevelWidget> {
                           hoverColor: Colors.transparent,
                           highlightColor: Colors.transparent,
                           onTap: () async {
-                            logFirebaseEvent(
-                                'CAESERCIPHERLEVEL_Container_hgknogqm_ON_');
-                            logFirebaseEvent('Container_navigate_to');
-
                             context.pushNamed(
                               Cclevel2Widget.routeName,
                               extra: <String, dynamic>{
@@ -411,10 +391,6 @@ class _CaesercipherlevelWidgetState extends State<CaesercipherlevelWidget> {
                           hoverColor: Colors.transparent,
                           highlightColor: Colors.transparent,
                           onTap: () async {
-                            logFirebaseEvent(
-                                'CAESERCIPHERLEVEL_Container_3cp3j1ir_ON_');
-                            logFirebaseEvent('Container_navigate_to');
-
                             context.pushNamed(
                               Cclevel3Widget.routeName,
                               extra: <String, dynamic>{
@@ -510,10 +486,6 @@ class _CaesercipherlevelWidgetState extends State<CaesercipherlevelWidget> {
                           hoverColor: Colors.transparent,
                           highlightColor: Colors.transparent,
                           onTap: () async {
-                            logFirebaseEvent(
-                                'CAESERCIPHERLEVEL_Container_i7biev3r_ON_');
-                            logFirebaseEvent('Container_navigate_to');
-
                             context.pushNamed(
                               Cclevel4Widget.routeName,
                               extra: <String, dynamic>{
@@ -609,10 +581,6 @@ class _CaesercipherlevelWidgetState extends State<CaesercipherlevelWidget> {
                           hoverColor: Colors.transparent,
                           highlightColor: Colors.transparent,
                           onTap: () async {
-                            logFirebaseEvent(
-                                'CAESERCIPHERLEVEL_Container_8z4doiqk_ON_');
-                            logFirebaseEvent('Container_navigate_to');
-
                             context.pushNamed(
                               Cclevel5Widget.routeName,
                               extra: <String, dynamic>{

@@ -40,7 +40,6 @@ class _Login3WidgetState extends State<Login3Widget>
     super.initState();
     _model = createModel(context, () => Login3Model());
 
-    logFirebaseEvent('screen_view', parameters: {'screen_name': 'Login3'});
     _model.emailAddressTextController ??= TextEditingController();
     _model.emailAddressFocusNode ??= FocusNode();
 
@@ -450,9 +449,6 @@ class _Login3WidgetState extends State<Login3Widget>
                                 child: FFButtonWidget(
                                   key: ValueKey('Button_jpl1'),
                                   onPressed: () async {
-                                    logFirebaseEvent(
-                                        'LOGIN3_PAGE_SIGN_IN_BTN_ON_TAP');
-                                    logFirebaseEvent('Button_auth');
                                     GoRouter.of(context).prepareAuthEvent();
 
                                     final user =
@@ -541,9 +537,6 @@ class _Login3WidgetState extends State<Login3Widget>
                                     0.0, 0.0, 0.0, 16.0),
                                 child: FFButtonWidget(
                                   onPressed: () async {
-                                    logFirebaseEvent(
-                                        'LOGIN3_CONTINUE_WITH_GOOGLE_BTN_ON_TAP');
-                                    logFirebaseEvent('Button_auth');
                                     GoRouter.of(context).prepareAuthEvent();
                                     final user = await authManager
                                         .signInWithGoogle(context);
@@ -606,9 +599,6 @@ class _Login3WidgetState extends State<Login3Widget>
                                           0.0, 0.0, 0.0, 16.0),
                                       child: FFButtonWidget(
                                         onPressed: () async {
-                                          logFirebaseEvent(
-                                              'LOGIN3_CONTINUE_WITH_APPLE_BTN_ON_TAP');
-                                          logFirebaseEvent('Button_auth');
                                           GoRouter.of(context)
                                               .prepareAuthEvent();
                                           final user = await authManager
@@ -683,10 +673,6 @@ class _Login3WidgetState extends State<Login3Widget>
                                   hoverColor: Colors.transparent,
                                   highlightColor: Colors.transparent,
                                   onTap: () async {
-                                    logFirebaseEvent(
-                                        'LOGIN3_PAGE_RichText_8rhrou94_ON_TAP');
-                                    logFirebaseEvent('RichText_navigate_to');
-
                                     context.pushNamed(
                                       CreateAccount3Widget.routeName,
                                       extra: <String, dynamic>{

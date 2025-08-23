@@ -27,8 +27,6 @@ class _CategoriesPagesWidgetState extends State<CategoriesPagesWidget> {
     super.initState();
     _model = createModel(context, () => CategoriesPagesModel());
 
-    logFirebaseEvent('screen_view',
-        parameters: {'screen_name': 'CategoriesPages'});
     WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
@@ -63,9 +61,6 @@ class _CategoriesPagesWidgetState extends State<CategoriesPagesWidget> {
               size: 30.0,
             ),
             onPressed: () async {
-              logFirebaseEvent('CATEGORIES_PAGES_arrow_back_rounded_ICN_');
-              logFirebaseEvent('IconButton_navigate_to');
-
               context.pushNamed(MainMenuWidget.routeName);
             },
           ),
@@ -144,10 +139,6 @@ class _CategoriesPagesWidgetState extends State<CategoriesPagesWidget> {
                             hoverColor: Colors.transparent,
                             highlightColor: Colors.transparent,
                             onTap: () async {
-                              logFirebaseEvent(
-                                  'CATEGORIES_PAGES_PAGE_caeser_ON_TAP');
-                              logFirebaseEvent('caeser_navigate_to');
-
                               context.pushNamed(
                                 CaesercipherlevelWidget.routeName,
                                 extra: <String, dynamic>{
@@ -242,10 +233,6 @@ class _CategoriesPagesWidgetState extends State<CategoriesPagesWidget> {
                             hoverColor: Colors.transparent,
                             highlightColor: Colors.transparent,
                             onTap: () async {
-                              logFirebaseEvent(
-                                  'CATEGORIES_PAGES_PAGE_Atbash_ON_TAP');
-                              logFirebaseEvent('Atbash_navigate_to');
-
                               context
                                   .pushNamed(AtbashCipherLevelWidget.routeName);
                             },
@@ -331,10 +318,6 @@ class _CategoriesPagesWidgetState extends State<CategoriesPagesWidget> {
                             hoverColor: Colors.transparent,
                             highlightColor: Colors.transparent,
                             onTap: () async {
-                              logFirebaseEvent(
-                                  'CATEGORIES_PAGES_PAGE_vigenere_ON_TAP');
-                              logFirebaseEvent('vigenere_navigate_to');
-
                               context.pushNamed(
                                   VIGENEREcipherlevelWidget.routeName);
                             },
@@ -421,10 +404,6 @@ class _CategoriesPagesWidgetState extends State<CategoriesPagesWidget> {
                             hoverColor: Colors.transparent,
                             highlightColor: Colors.transparent,
                             onTap: () async {
-                              logFirebaseEvent(
-                                  'CATEGORIES_PAGES_PAGE_Morsecode_ON_TAP');
-                              logFirebaseEvent('Morsecode_navigate_to');
-
                               context.pushNamed(
                                   VIGENEREcipherlevelWidget.routeName);
                             },
