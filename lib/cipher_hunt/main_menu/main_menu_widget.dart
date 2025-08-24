@@ -10,7 +10,6 @@ import 'package:just_audio/just_audio.dart';
 import 'main_menu_model.dart';
 export 'main_menu_model.dart';
 
-/// exitApp button make it exit the app
 class MainMenuWidget extends StatefulWidget {
   const MainMenuWidget({super.key});
 
