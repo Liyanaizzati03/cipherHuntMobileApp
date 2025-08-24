@@ -461,7 +461,7 @@ class _Login3WidgetState extends State<Login3Widget>
                                       return;
                                     }
 
-                                    context.goNamedAuth(
+                                    context.pushNamedAuth(
                                         MainMenuWidget.routeName,
                                         context.mounted);
                                   },
@@ -544,9 +544,17 @@ class _Login3WidgetState extends State<Login3Widget>
                                       return;
                                     }
 
-                                    context.goNamedAuth(
-                                        MainMenuWidget.routeName,
-                                        context.mounted);
+                                    context.pushNamedAuth(
+                                      MainMenuWidget.routeName,
+                                      context.mounted,
+                                      extra: <String, dynamic>{
+                                        kTransitionInfoKey: TransitionInfo(
+                                          hasTransition: true,
+                                          transitionType:
+                                              PageTransitionType.bottomToTop,
+                                        ),
+                                      },
+                                    );
                                   },
                                   text: FFLocalizations.of(context).getText(
                                     'yhjf4dzd' /* Continue with Google */,
@@ -607,7 +615,7 @@ class _Login3WidgetState extends State<Login3Widget>
                                             return;
                                           }
 
-                                          context.goNamedAuth(
+                                          context.pushNamedAuth(
                                               MainMenuWidget.routeName,
                                               context.mounted);
                                         },

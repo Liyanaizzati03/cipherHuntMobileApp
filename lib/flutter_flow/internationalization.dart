@@ -350,27 +350,27 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // VIGENEREcipherlevel
   {
-    'd2i0dtek': {
+    'gu12y3c9': {
       'en': 'LEVEL 1',
       'ms': '',
     },
-    'zixpt0sg': {
+    '83mzga25': {
       'en': 'LEVEL 2',
       'ms': '',
     },
-    'z2zatx67': {
+    '3vkkc8x9': {
       'en': 'LEVEL 3',
       'ms': '',
     },
-    'dxfk91sh': {
+    'ejkjlj3m': {
       'en': 'LEVEL 4',
       'ms': '',
     },
-    'digasrbc': {
+    '7mfzcwcz': {
       'en': 'LEVEL 5',
       'ms': '',
     },
-    'tqn5knq9': {
+    '6wricwsp': {
       'en': 'Choose Level',
       'ms': '',
     },
@@ -480,7 +480,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'XYQGBTO',
       'ms': '',
     },
-    '1wt5jg3z': {
+    'qmh2f2rm': {
       'en': 'Home',
       'ms': '',
     },
@@ -1886,7 +1886,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Sign in here',
       'ms': '',
     },
-    '7n5mqbpm': {
+    'o3tvuda7': {
       'en': 'Home',
       'ms': '',
     },
@@ -1937,7 +1937,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Sign Up here',
       'ms': '',
     },
-    'pkgw713o': {
+    'cgs22wo7': {
       'en': 'Home',
       'ms': '',
     },
